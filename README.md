@@ -1,6 +1,6 @@
-# react-component-boilerplate
-A boilerplate for react components
+# material-ui AppDrawer
+A material-ui AppDrawer for react components
 
-Download it and build your component(s). It should be ready to go.
+It's primarily based on the material-ui react package
 
-###Licensed under MIT 
+###Licensed under Proprietary License
