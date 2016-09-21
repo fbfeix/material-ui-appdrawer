@@ -10,6 +10,8 @@ injectTapEventPlugin()
 
 export * from './Header.jsx'
 import Header from './Header.jsx'
+import { StickyContainer, Sticky } from 'react-sticky'
+
 
 class AppContainer extends React.Component {
     constructor(props) {
@@ -33,9 +35,10 @@ class AppContainer extends React.Component {
         const {appTitle, children, drawerContent, minWidth} = this.props
 
         return <MuiThemeProvider >
-            <div>
-
-                <Header onMenuTouchTap={this._toggle} title={appTitle}/>
+            <StickyContainer>
+                <Sticky>
+                    <Header onMenuTouchTap={this._toggle} title={appTitle}/>
+                </Sticky>
                 <MediaQuery maxWidth={minWidth}>
                 <Drawer
                     ref={(ref) => this.leftNav = ref}
@@ -50,7 +53,7 @@ class AppContainer extends React.Component {
                     <div>
                         {children}
                     </div>
-            </div>
+            </StickyContainer>
         </MuiThemeProvider >
     }
 }

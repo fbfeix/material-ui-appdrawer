@@ -2,16 +2,25 @@
 body {
   margin: 0px;
   padding: 0px;
+  padding-top: 10px;
 }
 
 header {
-  border-bottom: 1px solid #ccc;
-  background-color: #fff;
-  box-shadow: 0px 2px 3px #ccc;
+
 
   h1 {
     font-size: 18px;
     font-weight: 100;
     font-family: Roboto, sans-serif;
   }
+}
+
+.sticky header {
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px #ccc;
+}
+
+#ma-body {
+  padding-bottom: 1000px;
 }

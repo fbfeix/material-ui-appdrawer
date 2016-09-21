@@ -11,4 +11,4 @@ const drawerContent = <div>
 <p>Wow</p>
 </div>
 
-ReactDOM.render(<App drawerContent={drawerContent}><div><h2>Wow this is awesome</h2><p>Your App Drawer</p></div></App>, document.getElementById('container'))
+ReactDOM.render(<App drawerContent={drawerContent}><div id="ma-body"><h2>Wow this is awesome</h2><p>Your App Drawer</p></div></App>, document.getElementById('container'))
